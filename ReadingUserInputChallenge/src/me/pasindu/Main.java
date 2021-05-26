@@ -9,7 +9,7 @@ public class Main {
         int counter = 1;
         int sum = 0;
 
-        while (true) {
+        while (counter < 11) {
             System.out.print("Enter number #" + counter + ": ");
 
             boolean hasNextInt = scanner.hasNextInt();
@@ -17,9 +17,6 @@ public class Main {
             if (hasNextInt) {
                 sum += scanner.nextInt();
                 counter++;
-                if (counter == 11) {
-                    break;
-                }
             } else {
                 System.out.println("Invalid number");
             }
