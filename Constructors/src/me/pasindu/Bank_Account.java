@@ -7,6 +7,13 @@ public class Bank_Account {
     private String customerName;
     private String customerEmail;
 
+    public Bank_Account(String customerName, String customerEmail, String customerPhoneNumber) {
+        this("99999", 100.95, customerName, customerEmail, customerPhoneNumber);
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+        this.customerPhoneNumber = customerPhoneNumber;
+    }
+
     public Bank_Account() {
         this("5678", 2.50, "Default name", "default address", "default phone");
         System.out.println("Empty constructor called");
