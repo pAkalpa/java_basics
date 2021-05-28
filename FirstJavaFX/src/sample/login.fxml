@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane fx:id="sPane" dividerPositions="0.55" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style/loginStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+  <items>
+    <AnchorPane fx:id="aPane1" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" stylesheets="@style/loginStyle.css">
+         <children>
+            <Label fx:id="SignInTitle" layoutX="84.0" layoutY="57.0" stylesheets="@style/loginStyle.css" text="Sign in " />
+            <Label fx:id="username" layoutX="14.0" layoutY="139.0" stylesheets="@style/loginStyle.css" text="Username" />
+            <Label fx:id="password" layoutX="14.0" layoutY="179.0" stylesheets="@style/loginStyle.css" text="Password" />
+            <TextField fx:id="usernameField" layoutX="94.0" layoutY="137.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@style/loginStyle.css" />
+            <PasswordField fx:id="passwordField" layoutX="94.0" layoutY="177.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@style/loginStyle.css" />
+            <Button fx:id="signinButton" layoutX="93.0" layoutY="261.0" mnemonicParsing="false" stylesheets="@style/loginStyle.css" text="SIGN IN" />
+            <Hyperlink fx:id="forgetPW" layoutX="98.0" layoutY="202.0" stylesheets="@style/loginStyle.css" text="Forgot your password?" />
+         </children></AnchorPane>
+    <AnchorPane fx:id="aPane2" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" stylesheets="@style/loginStyle.css">
+         <children>
+            <Label fx:id="para1" layoutX="4.0" layoutY="157.0" stylesheets="@style/loginStyle.css" text="Enter your personal details and start " />
+            <Label fx:id="para2" layoutX="80.0" layoutY="180.0" stylesheets="@style/loginStyle.css" text="journey with us" />
+            <Label fx:id="pane2Title" layoutX="25.0" layoutY="56.0" stylesheets="@style/loginStyle.css" text="Hello, Pal!" />
+            <Button fx:id="signupButton" layoutX="68.0" layoutY="260.0" mnemonicParsing="false" stylesheets="@style/loginStyle.css" text="SIGN UP" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
