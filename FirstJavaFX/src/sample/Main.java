@@ -6,12 +6,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource( "login.fxml"));
-        root.getStylesheets().add("style/loginStyle.css");
+        root.getStylesheets().add("file:loginStyle.css");
         primaryStage.setTitle("JavaFX Welcome!");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();

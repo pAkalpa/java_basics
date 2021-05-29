@@ -1,23 +1,23 @@
 #SignInTitle {
-    -fx-font-family: Bahnschrift;
+    -fx-font-family: Montserrat;
     -fx-font-weight: bold;
     -fx-font-size: 45px;
     -fx-text-fill: black;
 }
 
 #pane2Title {
-    -fx-font-family: Bahnschrift;
+    -fx-font-family: Montserrat;
     -fx-font-weight: bold;
     -fx-font-size: 45px;
     -fx-text-fill: #f6f5f7;
 }
 #username, #password {
-    -fx-font-family: "Times New Roman";
+    -fx-font-family: Montserrat;
     -fx-font-size: 18px;
 }
 
-#para1, #para2 {
-    -fx-font-family: Bahnschrift;
+#para1 {
+    -fx-font-family: Montserrat;
     -fx-font-size: 16px;
     -fx-text-fill: #f6f5f7;
 }
@@ -40,6 +40,12 @@
     -fx-text-fill: #FF4B2B;
 }
 
+#signinButton:pressed {
+    -fx-text-fill: red;
+    -fx-border-color: #FF4B2B;
+    -fx-effect: innershadow(gaussian, #FF4B2B, 10, 0.05, 1, 1);
+}
+
 #signupButton {
     -fx-background-radius: 20px;
     -fx-font-size: 15px;
@@ -55,6 +61,11 @@
 #signupButton:hover {
     -fx-background-color: #f6f5f7;
     -fx-text-fill: FF416C;
+}
+
+#signupButton:pressed {
+    -fx-text-fill: red;
+    -fx-effect: innershadow(gaussian, #FF416C, 10, 0.1, 1, 1);
 }
 
 #aPane1 {
@@ -79,5 +90,19 @@
 
 .text-field:focused{
     -fx-faint-focus-color: transparent;
-    -fx-focus-color:rgba(0,0,0,0.6); /* here rgba (corrected) */
+    -fx-focus-color: #FF4B2B;
+}
+
+#usernameField, #passwordField {
+    -fx-background-radius: 20px;
+    -fx-min-height: 30px;
+    -fx-border-radius: 20px;
+}
+
+#usernameField:pressed, #passwordField:pressed {
+    -fx-border-color: #FF416C;
+}
+
+#forgetPW:pressed {
+    -fx-text-fill: red;
 }
