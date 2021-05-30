@@ -7,8 +7,9 @@
 }
 
 #scrollPane, #apane {
-    -fx-background-color: white;
-    -fx-background-color: linear-gradient(from 300px 0px to 300px 800px, white, rgba(255, 65, 108, 0.79));
+    /*-fx-background-color: white;*/
+    -fx-background-color: rgba(255, 65, 108, 0.47);
+    /*-fx-background-color: linear-gradient(from 300px 0px to 300px 800px, white, rgba(255, 65, 108, 0.79));*/
     /*-fx-background-color: linear-gradient(from 100% 100% to 50% 50%, #FF4B2B 1%, #ffffff 9%);*/
     /*-fx-background-image: linear-gradient(from 0% 0% to 100% 100%, #FF4B2B, #ffffff)*/
 }
@@ -19,7 +20,6 @@
     -fx-font-family: Montserrat;
     -fx-font-weight: bold;
     -fx-font-size: 15px;
-    -fx-background-color: white;
 }
 
 #scrollPane #apane #age, #birthdayPicker {
@@ -51,26 +51,44 @@
     -fx-background-color: #FF416C;
     -fx-font-family: Montserrat;
     -fx-font-weight: bold;
-    -fx-border-radius: 30px;
-    -fx-border-color: #FF416C;
     -fx-text-fill: white;
-    -fx-min-width: 50px;
+    -fx-background-image: url('/sample/doneW.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90% 90%;
+    -fx-alignment: center-left;
 }
 
 #submit:hover {
     -fx-text-fill: #FF416C;
     -fx-background-color: white;
-    -fx-border-color: #FF416C;
+    -fx-effect: dropshadow(one-pass-box, #FF416C,10, 0.5, 1, 1);
+    -fx-background-image: url('/sample/doneP.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90% 90%;
 }
 
 #clear {
     -fx-background-radius: 30px;
     -fx-font-size: 20px;
     -fx-min-width: 50px;
+    -fx-font-family: Montserrat;
+    -fx-font-weight: bold;
+    -fx-background-color: #4158D0;
+    -fx-text-fill: white;
+    -fx-background-image: url('/sample/clearW.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90% 90%;
+    -fx-alignment: center-left;
 }
 
 #clear:hover {
-
+    -fx-background-image: url('/sample/clearB.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90% 90%;
+    -fx-content-display: top;
+    -fx-text-fill: #4158D0;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(one-pass-box, #4158D0,10, 0.5, 1, 1);
 }
 
 #passVisible {
