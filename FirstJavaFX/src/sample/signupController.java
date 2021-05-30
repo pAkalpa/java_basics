@@ -22,9 +22,6 @@ public class signupController implements Initializable {
     private Label signupTitle;
 
     @FXML
-    private Button exit;
-
-    @FXML
     private ScrollPane scrollPane;
 
     @FXML
@@ -36,6 +33,9 @@ public class signupController implements Initializable {
 
     @FXML
     private PasswordField pass;
+
+    @FXML
+    private PasswordField confirmPass;
 
     @FXML
     void showPassword(ActionEvent event) {
@@ -56,7 +56,18 @@ public class signupController implements Initializable {
 
     @FXML
     private TextField firstname;
-    public TextField lastname;
+
+    @FXML
+    private TextField lastname;
+
+    @FXML
+    private TextField emailField;
+
+    @FXML
+    private TextField phoneNum;
+
+    @FXML
+    private TextField username;
 
     @FXML
     private DatePicker birthdayPicker;
@@ -66,8 +77,12 @@ public class signupController implements Initializable {
 
     @FXML
     private RadioButton radMale;
-    public RadioButton radFemale;
-    public RadioButton radOther;
+
+    @FXML
+    private RadioButton radFemale;
+
+    @FXML
+    private RadioButton radOther;
 
     @FXML
     void clearAll (ActionEvent event) {
@@ -75,6 +90,10 @@ public class signupController implements Initializable {
         lastname.clear();
         birthdayPicker.setValue(null);
         age.getValueFactory().setValue(null);
+        radMale.setSelected(false);
+        radFemale.setSelected(false);
+        radOther.setSelected(false);
+        countryCombo.setValue(null);
     }
 
     public static void display() throws IOException {
