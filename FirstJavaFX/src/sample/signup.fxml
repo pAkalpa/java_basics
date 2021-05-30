@@ -15,7 +15,7 @@
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@style/signupStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.signupController">
+<ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" stylesheets="@style/signupStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.signupController">
   <content>
     <AnchorPane fx:id="apane" minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="585.0" stylesheets="@style/signupStyle.css">
          <children>
@@ -42,8 +42,8 @@
             <Label fx:id="text" layoutX="65.0" layoutY="264.0" stylesheets="@style/signupStyle.css" text="Gender:" />
             <Separator layoutX="32.0" layoutY="417.0" prefHeight="45.0" prefWidth="510.0" />
             <Separator layoutX="38.0" layoutY="500.0" prefHeight="45.0" prefWidth="510.0" />
-            <Button fx:id="submit" layoutX="131.0" layoutY="681.0" mnemonicParsing="false" stylesheets="@style/signupStyle.css" text="Submit" />
-            <Button fx:id="clear" layoutX="366.0" layoutY="679.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" stylesheets="@style/signupStyle.css" text="Clear" onAction="#clearAll" />
+            <Button fx:id="submit" layoutX="104.0" layoutY="679.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="149.0" stylesheets="@style/signupStyle.css" text="Submit" />
+            <Button fx:id="clear" layoutX="346.0" layoutY="682.0" mnemonicParsing="false" onAction="#clearAll" prefHeight="46.0" prefWidth="149.0" stylesheets="@style/signupStyle.css" text="Clear" />
          </children></AnchorPane>
   </content>
 </ScrollPane>
