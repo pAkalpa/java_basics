@@ -2,14 +2,8 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 public class loginController {
     @FXML
@@ -57,14 +51,7 @@ public class loginController {
     @FXML
     void showSignupForm(ActionEvent event) {
         try {
-            Parent root1 = FXMLLoader.load(getClass().getResource("signup.fxml"));
-            Stage stage = new Stage();
-            stage.initStyle(StageStyle.TRANSPARENT);
-            Scene scene = new Scene(root1);
-            stage.setTitle("Signup");
-            stage.setScene(scene);
-            stage.initModality(Modality.APPLICATION_MODAL);
-            stage.show();
+            signupController.display();
         } catch (Exception e) {
             System.out.println("Cant Load New Window");
         }

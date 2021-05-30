@@ -13,7 +13,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource( "login.fxml"));
-        root.getStylesheets().add("file:loginStyle.css");
+        root.getStylesheets().add("file:style/loginStyle.css");
         primaryStage.setTitle("JavaFX Welcome!");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();

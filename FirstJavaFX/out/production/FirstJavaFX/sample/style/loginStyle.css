@@ -1,0 +1,113 @@
+#SignInTitle {
+    -fx-font-family: Montserrat;
+    -fx-font-weight: bold;
+    -fx-font-size: 45px;
+    -fx-text-fill: black;
+}
+
+#pane2Title {
+    -fx-font-family: Montserrat;
+    -fx-font-weight: bold;
+    -fx-font-size: 45px;
+    -fx-text-fill: #f6f5f7;
+}
+#username, #password {
+    -fx-font-family: Montserrat;
+    -fx-font-size: 18px;
+}
+
+#para1 {
+    -fx-font-family: Montserrat;
+    -fx-font-size: 16px;
+    -fx-text-fill: #f6f5f7;
+}
+
+#signinButton {
+    -fx-background-radius: 20px;
+    -fx-font-size: 15px;
+    -fx-background-color: #FF4B2B;
+    -fx-border-color: #FF4B2B;
+    -fx-border-radius: 20px;
+    -fx-text-fill: #F6F5F7;
+    -fx-min-width: 140px;
+    -fx-min-height: 40px;
+    -fx-font-weight: bold;
+
+}
+
+#signinButton:hover {
+    -fx-background-color: #F6F5F7;
+    -fx-text-fill: #FF4B2B;
+}
+
+#signinButton:pressed {
+    -fx-text-fill: red;
+    -fx-border-color: #FF4B2B;
+    -fx-effect: innershadow(gaussian, #FF4B2B, 10, 0.05, 1, 1);
+}
+
+#signupButton {
+    -fx-background-radius: 20px;
+    -fx-font-size: 15px;
+    -fx-background-color: #FF416C;
+    -fx-border-color: #f6f5f7;
+    -fx-border-radius: 20px;
+    -fx-text-fill: #f6f5f7;
+    -fx-min-width: 140px;
+    -fx-min-height: 40px;
+    -fx-font-weight: bold;
+}
+
+#signupButton:hover {
+    -fx-background-color: #f6f5f7;
+    -fx-text-fill: FF416C;
+}
+
+#signupButton:pressed {
+    -fx-text-fill: red;
+    -fx-effect: innershadow(gaussian, #FF416C, 10, 0.1, 1, 1);
+}
+
+#aPane1 {
+    -fx-background-color: white;
+}
+
+#aPane2 {
+    -fx-background-color: #FF416C;
+}
+
+#forgetPW {
+    -fx-underline: false;
+}
+
+#forgetPW:hover {
+    -fx-text-fill: #FF416C;
+}
+
+.split-pane-divider {
+    -fx-background-color: transparent;
+}
+
+.text-field:focused{
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: #FF4B2B;
+}
+
+#usernameField, #passwordField {
+    -fx-background-radius: 20px;
+    -fx-min-height: 40px;
+    -fx-min-width: 280px;
+    -fx-border-radius: 20px;
+    -fx-font-family: Montserrat;
+    -fx-font-size: 18px;
+    -fx-focus-traversable: true;
+    -fx-font-weight: bold;
+}
+
+#usernameField:pressed, #passwordField:pressed {
+    -fx-border-color: #FF416C;
+}
+
+#forgetPW:pressed {
+    -fx-text-fill: red;
+}

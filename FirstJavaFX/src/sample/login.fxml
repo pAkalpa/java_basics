@@ -8,23 +8,21 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<SplitPane fx:id="sPane" dividerPositions="0.55" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@loginStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+<SplitPane fx:id="sPane" dividerPositions="0.55" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style/loginStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
   <items>
-    <AnchorPane fx:id="aPane1" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" stylesheets="@loginStyle.css">
+    <AnchorPane fx:id="aPane1" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" stylesheets="@style/loginStyle.css">
          <children>
-            <Label fx:id="SignInTitle" layoutX="84.0" layoutY="57.0" stylesheets="@loginStyle.css" text="Sign in " />
-            <Label fx:id="username" layoutX="12.0" layoutY="136.0" stylesheets="@loginStyle.css" text="Username" />
-            <Label fx:id="password" layoutX="12.0" layoutY="176.0" stylesheets="@loginStyle.css" text="Password" />
-            <TextField fx:id="usernameField" layoutX="102.0" layoutY="135.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@loginStyle.css" />
-            <PasswordField fx:id="passwordField" layoutX="102.0" layoutY="175.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@loginStyle.css" />
-            <Button fx:id="signinButton" layoutX="93.0" layoutY="261.0" mnemonicParsing="false" stylesheets="@loginStyle.css" text="SIGN IN" />
-            <Hyperlink fx:id="forgetPW" layoutX="98.0" layoutY="202.0" stylesheets="@loginStyle.css" text="Forgot your password?" />
+            <Label fx:id="SignInTitle" layoutX="84.0" layoutY="57.0" stylesheets="@style/loginStyle.css" text="Sign in " />
+            <TextField fx:id="usernameField" layoutX="23.0" layoutY="146.0" prefHeight="25.0" prefWidth="214.0" promptText="Username" stylesheets="@style/loginStyle.css" />
+            <PasswordField fx:id="passwordField" layoutX="23.0" layoutY="199.0" prefHeight="25.0" prefWidth="214.0" promptText="Password" stylesheets="@style/loginStyle.css" />
+            <Button fx:id="signinButton" layoutX="93.0" layoutY="298.0" mnemonicParsing="false" stylesheets="@style/loginStyle.css" text="SIGN IN" />
+            <Hyperlink fx:id="forgetPW" layoutX="98.0" layoutY="260.0" stylesheets="@style/loginStyle.css" text="Forgot your password?" />
          </children></AnchorPane>
-    <AnchorPane fx:id="aPane2" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" stylesheets="@loginStyle.css">
+    <AnchorPane fx:id="aPane2" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" stylesheets="@style/loginStyle.css">
          <children>
-            <Label fx:id="para1" layoutX="6.0" layoutY="149.0" stylesheets="@loginStyle.css" text="Enter your personal details and start&#10;journey with us " textAlignment="CENTER" />
-            <Label fx:id="pane2Title" layoutX="25.0" layoutY="56.0" stylesheets="@loginStyle.css" text="Hello, Pal!" />
-            <Button fx:id="signupButton" layoutX="68.0" layoutY="260.0" mnemonicParsing="false" onAction="#showSignupForm" stylesheets="@loginStyle.css" text="SIGN UP" />
+            <Label fx:id="para1" layoutX="6.0" layoutY="149.0" stylesheets="@style/loginStyle.css" text="Enter your personal details and start&#10;journey with us " textAlignment="CENTER" />
+            <Label fx:id="pane2Title" layoutX="25.0" layoutY="56.0" stylesheets="@style/loginStyle.css" text="Hello, Pal!" />
+            <Button fx:id="signupButton" layoutX="68.0" layoutY="260.0" mnemonicParsing="false" onAction="#showSignupForm" stylesheets="@style/loginStyle.css" text="SIGN UP" />
          </children></AnchorPane>
   </items>
 </SplitPane>

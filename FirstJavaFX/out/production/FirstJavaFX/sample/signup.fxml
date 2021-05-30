@@ -1,21 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.signupController">
+<ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@style/signupStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.signupController">
   <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="585.0">
+    <AnchorPane fx:id="apane" minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="585.0" stylesheets="@style/signupStyle.css">
          <children>
-            <Label fx:id="signupTitle" layoutX="252.0" layoutY="28.0" text="Create Account" />
-            <Button fx:id="exit" layoutX="28.0" layoutY="138.0" mnemonicParsing="false" text="Back" />
-            <Button layoutX="216.0" layoutY="180.0" mnemonicParsing="false" text="Button" />
-            <Button layoutX="216.0" layoutY="214.0" mnemonicParsing="false" text="Button" />
-            <Button layoutX="216.0" layoutY="249.0" mnemonicParsing="false" text="Button" />
-            <Separator layoutX="3.0" layoutY="163.0" prefHeight="0.0" prefWidth="580.0" />
+            <Label fx:id="CreateAccount" layoutX="145.0" layoutY="14.0" stylesheets="@style/signupStyle.css" text="Create Account" />
+            <TextField fx:id="firstname" layoutX="65.0" layoutY="125.0" promptText="First Name" stylesheets="@style/signupStyle.css" />
+            <TextField fx:id="lastname" layoutX="316.0" layoutY="125.0" promptText="Last Name" stylesheets="@style/signupStyle.css" />
+            <Spinner fx:id="age" editable="true" layoutX="143.0" layoutY="196.0" max="100" min="18" minHeight="27.0" prefHeight="27.0" prefWidth="128.0" promptText="Age" stylesheets="@style/signupStyle.css" />
+            <DatePicker fx:id="birthdayPicker" layoutX="307.0" layoutY="195.0" promptText="Date of Birth" stylesheets="@style/signupStyle.css" />
+            <RadioButton fx:id="radMale" layoutX="141.0" layoutY="266.0" mnemonicParsing="false" stylesheets="@style/signupStyle.css" text="Male">
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="radFemale" layoutX="141.0" layoutY="294.0" mnemonicParsing="false" stylesheets="@style/signupStyle.css" text="Female" toggleGroup="$gender" />
+            <RadioButton fx:id="radOther" layoutX="141.0" layoutY="321.0" mnemonicParsing="false" stylesheets="@style/signupStyle.css" text="Other" toggleGroup="$gender" />
+            <ChoiceBox fx:id="civilStatus" layoutX="90.0" layoutY="370.0" prefWidth="150.0" stylesheets="@style/signupStyle.css" value="Civil Status" />
+            <ComboBox fx:id="countryCombo" layoutX="341.0" layoutY="370.0" prefWidth="150.0" stylesheets="@style/signupStyle.css" value="Select Country" />
+            <TextField fx:id="emailField" layoutX="74.0" layoutY="462.0" promptText="Email" stylesheets="@style/signupStyle.css" />
+            <TextField fx:id="phoneNum" layoutX="317.0" layoutY="462.0" promptText="Phone Number" stylesheets="@style/signupStyle.css" />
+            <TextField fx:id="username" layoutX="71.0" layoutY="545.0" promptText="Username" stylesheets="@style/signupStyle.css" />
+            <ToggleButton fx:id="passVisible" layoutX="495.0" layoutY="548.0" mnemonicParsing="false" onAction="#showPassword" prefHeight="25.0" prefWidth="49.0" stylesheets="@style/signupStyle.css" />
+            <PasswordField fx:id="confirmPass" layoutX="322.0" layoutY="584.0" promptText="Confirm Password" stylesheets="@style/signupStyle.css" />
+            <PasswordField fx:id="pass" layoutX="322.0" layoutY="545.0" promptText="Password" stylesheets="@style/signupStyle.css" />
+            <Label fx:id="text" layoutX="65.0" layoutY="201.0" stylesheets="@style/signupStyle.css" text="Pick Age :" />
+            <Label fx:id="text" layoutX="65.0" layoutY="264.0" stylesheets="@style/signupStyle.css" text="Gender:" />
+            <Separator layoutX="32.0" layoutY="417.0" prefHeight="45.0" prefWidth="510.0" />
+            <Separator layoutX="38.0" layoutY="500.0" prefHeight="45.0" prefWidth="510.0" />
+            <Button fx:id="submit" layoutX="131.0" layoutY="681.0" mnemonicParsing="false" stylesheets="@style/signupStyle.css" text="Submit" />
+            <Button fx:id="clear" layoutX="366.0" layoutY="679.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" stylesheets="@style/signupStyle.css" text="Clear" />
          </children></AnchorPane>
   </content>
 </ScrollPane>
