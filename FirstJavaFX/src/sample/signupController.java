@@ -19,12 +19,6 @@ import java.util.ResourceBundle;
 
 public class signupController implements Initializable {
     @FXML
-    private Label signupTitle;
-
-    @FXML
-    private ScrollPane scrollPane;
-
-    @FXML
     private ComboBox<String> countryCombo;
 
     @FXML
@@ -73,7 +67,7 @@ public class signupController implements Initializable {
     private DatePicker birthdayPicker;
 
     @FXML
-    private Spinner<String> age;
+    private Spinner<Integer> age;
 
     @FXML
     private RadioButton radMale;
@@ -89,11 +83,18 @@ public class signupController implements Initializable {
         firstname.clear();
         lastname.clear();
         birthdayPicker.setValue(null);
-        age.getValueFactory().setValue(null);
         radMale.setSelected(false);
+        age.getValueFactory().setValue(18);
         radFemale.setSelected(false);
         radOther.setSelected(false);
-        countryCombo.setValue(null);
+        countryCombo.setValue("Select Country");
+        pass.clear();
+        pass.setPromptText("Password");
+        confirmPass.clear();
+        emailField.clear();
+        phoneNum.clear();
+        username.clear();
+        civilStatus.setValue("Civil Status");
     }
 
     public static void display() throws IOException {

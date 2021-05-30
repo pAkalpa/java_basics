@@ -1,12 +1,14 @@
 #CreateAccount {
     -fx-font-family: Montserrat;
     -fx-font-size: 45px;
+    -fx-text-fill: black;
     -fx-font-weight: bold;
 
 }
 
 #scrollPane, #apane {
     -fx-background-color: white;
+    -fx-background-color: linear-gradient(from 300px 0px to 300px 800px, white, rgba(255, 65, 108, 0.79));
     /*-fx-background-color: linear-gradient(from 100% 100% to 50% 50%, #FF4B2B 1%, #ffffff 9%);*/
     /*-fx-background-image: linear-gradient(from 0% 0% to 100% 100%, #FF4B2B, #ffffff)*/
 }
@@ -17,6 +19,7 @@
     -fx-font-family: Montserrat;
     -fx-font-weight: bold;
     -fx-font-size: 15px;
+    -fx-background-color: white;
 }
 
 #scrollPane #apane #age, #birthdayPicker {
@@ -74,11 +77,13 @@
     -fx-background-image: url('/sample/visible0.png');
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
-    -fx-background-color: white;
+    -fx-background-color: transparent;
 }
 
 #passVisible:selected {
     -fx-background-image: url('/sample/visible1.png');
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
 }
 
 #username, #pass, #confirmPass {

@@ -43,7 +43,7 @@
             <Separator layoutX="32.0" layoutY="417.0" prefHeight="45.0" prefWidth="510.0" />
             <Separator layoutX="38.0" layoutY="500.0" prefHeight="45.0" prefWidth="510.0" />
             <Button fx:id="submit" layoutX="131.0" layoutY="681.0" mnemonicParsing="false" stylesheets="@style/signupStyle.css" text="Submit" />
-            <Button fx:id="clear" layoutX="366.0" layoutY="679.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" stylesheets="@style/signupStyle.css" text="Clear" />
+            <Button fx:id="clear" layoutX="366.0" layoutY="679.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" stylesheets="@style/signupStyle.css" text="Clear" onAction="#clearAll" />
          </children></AnchorPane>
   </content>
 </ScrollPane>
