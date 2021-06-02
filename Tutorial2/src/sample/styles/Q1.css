@@ -1,0 +1,107 @@
+#aPane {
+    -fx-background-image: url('/sample/q1back.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#Label {
+    -fx-font-family: Montserrat;
+    -fx-font-size: 40px;
+    -fx-text-fill: green;
+    -fx-font-weight: bolder;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, yellow, 30, 0.1, 5, 5);
+}
+
+#hello {
+    -fx-font-family: Montserrat;
+    -fx-font-size: 30px;
+    -fx-alignment: center;
+    -fx-text-fill: black;
+}
+
+#name {
+    -fx-font-size: 20px;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-family: Montserrat;
+    -fx-text-fill: black;
+    -fx-background-color: rgba(255, 255, 255, 0.83);
+    -fx-prompt-text-fill: #242424;
+    -fx-alignment: center;
+}
+
+#name:hover {
+    -fx-prompt-text-fill: gray;
+}
+
+#next {
+    -fx-background-color: transparent;
+    -fx-min-width: 26px;
+    -fx-min-height: 26px;
+    -fx-background-radius: 24px;
+    -fx-border-radius: 24px;
+    -fx-background-image: url("/sample/nextBlack.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 24px 24px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+#next:hover {
+    -fx-background-color: black;
+    -fx-background-image: url("/sample/nextWhite.png");
+    -fx-effect: dropshadow(one-pass-box, black,10, 0.5, 1, 1);
+    -fx-border-color: white;
+}
+
+#clickMe {
+    -fx-background-radius: 30px;
+    -fx-font-size: 20px;
+    -fx-min-width: 50px;
+    -fx-text-fill: white;
+    -fx-background-color: rgb(229, 62, 62);
+    -fx-font-family: Montserrat;
+    -fx-font-weight: bold;
+    -fx-background-image: url("/sample/clickWhite.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+    -fx-alignment: center-left;
+    -fx-background-size: 40px 40px;
+}
+
+#clickMe:hover {
+    -fx-background-image: url("/sample/clickRed.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+    -fx-content-display: top;
+    -fx-text-fill: #E53E3EFF;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(one-pass-box, #E53E3E, 10, 0.5, 1, 1);
+}
+
+#clear {
+    -fx-background-radius: 30px;
+    -fx-font-size: 20px;
+    -fx-min-width: 50px;
+    -fx-background-color: #4158D0;
+    -fx-font-family: Montserrat;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-image: url('/sample/clearW.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+    -fx-alignment: center-left;
+}
+
+#clear:hover {
+    -fx-background-image: url('/sample/clearB.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+    -fx-content-display: top;
+    -fx-text-fill: #4158D0;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(one-pass-box, #4158D0,10, 0.5, 1, 1);
+}

@@ -99,7 +99,7 @@ public class signupController implements Initializable {
 
     public static void display() throws IOException {
         Parent root1 = FXMLLoader.load(signupController.class.getResource("signup.fxml"));
-        root1.getStylesheets().add("file:sample/style/signupStyle.css");
+        root1.getStylesheets().add(signupController.class.getResource("/sample/style/signupStyle.css").toString());
         Stage stage = new Stage();
         Scene scene = new Scene(root1);
         stage.setTitle("Signup");
