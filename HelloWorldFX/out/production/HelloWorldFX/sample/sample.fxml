@@ -8,7 +8,7 @@
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
     <Label text="Welcome to JavaFX!" textFill="green">
         <font>
-            <Font name="Times New Roman bold" size="70"></Font>
+            <Font name="Times New Roman bold " size="70"></Font>
         </font>
     </Label>
 </GridPane>
