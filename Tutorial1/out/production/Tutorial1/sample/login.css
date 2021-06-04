@@ -1,0 +1,34 @@
+#aPane {
+
+}
+
+#welcomeLabel {
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 35px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #5aff00;
+}
+
+#unId, #pwd {
+    -fx-font-family: Arial;
+    -fx-font-size: 20px;
+}
+
+#unField, #pwdField {
+    -fx-font-family: Arial;
+    -fx-font-size: 20px;
+    -fx-background-radius: 30px;
+    -fx-background-color: wheat;
+}
+
+#signinButton,#signupButton {
+    -fx-background-radius: 20px;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+#signinButton:hover {
+    -fx-background-color: tomato;
+    -fx-text-fill: white;
+}
+
