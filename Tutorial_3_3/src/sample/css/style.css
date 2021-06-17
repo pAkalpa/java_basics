@@ -1,0 +1,26 @@
+#outputLabel {
+    -fx-alignment: center;
+    -fx-font-family: Montserrat;
+    -fx-font-size: 30px;
+    -fx-text-fill: black;
+    -fx-font-weight: bolder;
+}
+
+#showButton {
+    -fx-font-size: 15px;
+    -fx-background-radius: 20px;
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-radius: 20px;
+    -fx-font-weight: bold;
+}
+
+#showButton:hover {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+#titleField, #firstField, #lastField {
+    -fx-font-size: 20px;
+    -fx-background-radius: 30px;
+}

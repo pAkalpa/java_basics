@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0"
+            prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="675.0" prefWidth="396.0">
+            <children>
+                <HBox prefHeight="112.0" prefWidth="400.0">
+                    <children>
+                        <MenuBar prefHeight="30.0" prefWidth="399.0">
+                            <menus>
+                                <Menu mnemonicParsing="false" text="File">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" text="Save"/>
+                                        <MenuItem mnemonicParsing="false" text="Save As"/>
+                                        <MenuItem mnemonicParsing="false" text="New"/>
+                                        <MenuItem mnemonicParsing="false" text="Open"/>
+                                        <MenuItem mnemonicParsing="false" text="Close"/>
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Edit">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" text="Undo"/>
+                                        <MenuItem mnemonicParsing="false" text="Redo"/>
+                                        <MenuItem mnemonicParsing="false" text="Find"/>
+                                        <MenuItem mnemonicParsing="false" text="Replace"/>
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="View">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" text="Window"/>
+                                        <Menu mnemonicParsing="false" text="Views">
+                                            <MenuItem mnemonicParsing="false" text="Reading Mode"/>
+                                            <MenuItem mnemonicParsing="false" text="Presentation Mode"/>
+                                            <MenuItem mnemonicParsing="false" text="Normal Mode"/>
+                                            <MenuItem mnemonicParsing="false" text="Web Mode"/>
+                                        </Menu>
+                                        <Menu mnemonicParsing="false" text="Zoom">
+                                            <MenuItem mnemonicParsing="false" text="Zoom In"/>
+                                            <MenuItem mnemonicParsing="false" text="Zoom Out"/>
+                                        </Menu>
+                                    </items>
+                                </Menu>
+                            </menus>
+                        </MenuBar>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>
